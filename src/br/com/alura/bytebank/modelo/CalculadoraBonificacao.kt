@@ -6,21 +6,7 @@ class CalculadoraBonificacao {
         private set
 
     fun registra(funcionario: Funcionario) {
-
         this.total += funcionario.bonificacao
-
     }
-
-//    fun registra(gerente: br.com.alura.bytebank.modelo.Gerente) {
-//
-//        this.total += gerente.bonificacao()
-//
-//    }
-//
-//    fun registra(diretor: br.com.alura.bytebank.modelo.Diretor) {
-//
-//        this.total += diretor.bonificacao()
-//
-//    }
 
 }

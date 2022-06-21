@@ -1,11 +1,17 @@
 package br.com.alura.bytebank.teste
 
 fun testaCondicoes(saldo: Double) {
-
-    when {
-        saldo > 0.0 -> println("A conta é Positiva.")
-        saldo == 0.0 -> println("A conta está zerada.")
-        else -> println("A conta está negativa.")
+    if (saldo > 0.0) {
+        println("conta é positiva")
+    } else if (saldo == 0.0) {
+        println("conta é neutra")
+    } else {
+        println("conta é negativa")
     }
 
+    when {
+        saldo > 0.0 -> println("conta é positiva")
+        saldo == 0.0 -> println("conta é neutra")
+        else -> println("conta é negativa")
+    }
 }

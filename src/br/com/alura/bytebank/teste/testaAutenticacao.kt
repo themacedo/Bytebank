@@ -6,31 +6,27 @@ import br.com.alura.bytebank.modelo.Gerente
 import br.com.alura.bytebank.modelo.SistemaInterno
 
 fun testaAutenticacao() {
-
     val gerente = Gerente(
         nome = "Alex",
         cpf = "111.111.111-11",
         salario = 1000.0,
-        senha = 123
+        senha = 1000
     )
-
-    val diretor = Diretor(
+    val diretora = Diretor(
         nome = "Fran",
-        cpf = "222.222.222-65",
+        cpf = "222.222.222-22",
         salario = 2000.0,
-        senha = 1234,
-        plr = 100.0
+        senha = 2000,
+        plr = 200.0
     )
-
     val cliente = Cliente(
         nome = "Gui",
-        cpf = "333.333.333.33",
-        senha = 12345
-
+        cpf = "333.333.333-33",
+        senha = 1234
     )
 
     val sistema = SistemaInterno()
-    sistema.entra(gerente, senha = 123)
-    sistema.entra(diretor, senha = 1234)
-    sistema.entra(cliente, senha = 12345)
+    sistema.entra(gerente, 1000)
+    sistema.entra(diretora, 2000)
+    sistema.entra(cliente, 1234)
 }
